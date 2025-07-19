@@ -1,0 +1,49 @@
+body {
+    padding: 40px;
+}
+
+table {
+    background: tan;
+    margin: auto;
+    border: 1px solid black;
+}
+
+td {
+    background: tan;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    font-size: 60px;
+    text-align: center;
+}
+
+th {
+    background: tan;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+/* CSS selectors for alternating colors::after
+    Row tags (<tr></tr>) and Cell tags within rows (<td></td>) are logically numbered (with respect to CSS Combinator Selectors) 
+    from left to right and top to bottom, starting with 1.  */
+
+/*make the even numbered cells within odd numbered rows have a tan background */
+tr:nth-child(odd) > td:nth-child(even) {
+    background: tan;
+}
+
+/*make the odd numbered cells within odd numbered rows have a chocolate background */
+tr:nth-child(odd) > td:nth-child(odd) {
+    background: chocolate;
+}
+
+/*make the even numbered cells within even numbered rows have a chocolate background */
+tr:nth-child(even) > td:nth-child(even) {
+    background: tan;
+}
+
+/*make the odd numbered cells within even numbered rows have a tan background */
+tr:nth-child(even) > td:nth-child(odd) {
+    background: chocolate;
+}

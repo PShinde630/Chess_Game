@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess App - Rules</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    {% include 'navbar.html' %}
+    <div style="max-width: 800px; margin: 50px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h4 style="text-align: center; margin-bottom: 20px;">Chess Piece Descriptions</h4>
+        <ol style="line-height: 1.8; font-size: 18px; color: #333;">
+            <li><strong>King</strong>: Moves one square in any direction (horizontally, vertically, or diagonally). The king's objective is to avoid checkmate, where it cannot escape capture.</li>
+            <li><strong>Queen</strong>: Moves any number of squares in any direction (horizontally, vertically, or diagonally). It is the most powerful piece on the board.</li>
+            <li><strong>Rook</strong>: Moves any number of squares horizontally or vertically. Each player starts with two rooks, positioned at the corners of the board.</li>
+            <li><strong>Bishop</strong>: Moves any number of squares diagonally. Each player starts with two bishops, one on light squares and one on dark squares.</li>
+            <li><strong>Knight</strong>: Moves in an L-shape: two squares in one direction (horizontal or vertical) and then one square perpendicular, or vice versa. Knights can jump over other pieces.</li>
+            <li><strong>Pawn</strong>: Moves forward one square but captures diagonally. On its first move, a pawn can move forward two squares. Pawns can also promote to any other piece (except a king) if they reach the opponent’s back rank.</li>
+        </ol>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
